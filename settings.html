@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <title>UrDash</title>
+  </head>
+  <body>
+    <div class="page">
+      <div class="sidebar bg-white shad-1 p-20">
+        <div class="logo">
+          <a href="#">UrDash</a>
+          <a href="#" class="mobile-logo">UD</a>
+        </div>
+        <ul class="links">
+          <li>
+            <a href="index.html">
+              <i class="fa-solid fa-chart-line"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="active">
+              <i class="fa-solid fa-sliders"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="profile.html">
+              <i class="fa-regular fa-user"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="projects.html">
+              <i class="fa-solid fa-diagram-project"></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="courses.html">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>Courses</span>
+            </a>
+          </li>
+          <li>
+            <a href="friends.html">
+              <i class="fa-solid fa-users"></i>
+              <span>Friends</span>
+            </a>
+          </li>
+          <li>
+            <a href="files.html">
+              <i class="fa-regular fa-file"></i>
+              <span>Files</span>
+            </a>
+          </li>
+          <li>
+            <a href="plans.html">
+              <i class="fa-regular fa-credit-card"></i>
+              <span>Plans</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-content">
+        <header class="bg-w">
+          <div class="search rad-10">
+            <input
+              type="search"
+              class="border-ccc rad-10"
+              placeholder="Type A Keyword"
+            />
+          </div>
+          <div class="noti-prof">
+            <div class="icon rel">
+              <i class="fa-regular fa-bell"></i>
+            </div>
+            <img src="images/avatar.png" alt="Profile Image" />
+          </div>
+        </header>
+
+        <div class="content p-20">
+          <h1 class="mb-40 rel">Settings</h1>
+          <div class="settings">
+            <div class="sections">
+              <section class="site-control">
+                <h2>Site Control</h2>
+                <p>Control The Website If There Is Maintenance</p>
+                <div class="website-control flx-sb mb-20 gap-10">
+                  <div class="title-des">
+                    <span class="title block fw-500 mb-5">Website Control</span>
+                    <span class="description fs-13 c-gray fw-500">
+                      Open/Close Website And Type The Reason
+                    </span>
+                  </div>
+                  <label>
+                    <input type="checkbox" class="toggle-check" checked />
+                    <div class="toggle-switch"></div>
+                  </label>
+                </div>
+                <textarea
+                  placeholder="Close Message Content"
+                  class="rad-6 p-10 border-ccc w-full"
+                ></textarea>
+              </section>
+
+              <section class="general-info">
+                <h2>General Info</h2>
+                <p>General Information About Your Account</p>
+
+                <form>
+                  <label for="f-name" class="c-gray fw-500 fs-14"
+                    >First Name</label
+                  >
+                  <input
+                    type="text"
+                    id="f-name"
+                    placeholder="First Name"
+                    class="block mt-10 mb-20 border-ccc rad-6 p-10 fs-13 w-full"
+                  />
+
+                  <label for="l-name" class="c-gray fw-500 fs-14"
+                    >Last Name</label
+                  >
+                  <input
+                    type="text"
+                    id="l-name"
+                    placeholder="Last Name"
+                    class="block mt-10 mb-20 border-ccc rad-6 p-10 fs-13 w-full"
+                  />
+
+                  <label for="email" class="c-gray fw-500 fs-14">Email</label>
+
+                  <div class="mail mt-10 change flx-ac gap-20">
+                    <input
+                      type="email"
+                      id="email"
+                      value="Mina@Gmail.com"
+                      class="block border-ccc fw-500 rad-6 p-10 fs-13 flx-1"
+                      disabled
+                    />
+                    <a href="#" class="change-lnk c-blue fw-500">Change</a>
+                  </div>
+                </form>
+              </section>
+
+              <section class="security-info">
+                <h2>Security Info</h2>
+                <p>Security Information About Your Account</p>
+
+                <ul>
+                  <li class="flx-ac gap-10">
+                    <div class="info flx-1">
+                      <span class="title block fw-500 mb-10">Password</span>
+                      <span class="block fw-500 fs-13 c-gray"
+                        >Last Change On 25/10/2021</span
+                      >
+                    </div>
+                    <a
+                      href="#"
+                      class="bg-blue c-white btn-shape bg-alt-hvr bg-trns"
+                      >Change</a
+                    >
+                  </li>
+                  <li class="flx-ac gap-10">
+                    <div class="info flx-1">
+                      <span class="title block fw-500 mb-10"
+                        >Two-Factor Authentication</span
+                      >
+                      <span class="block fw-500 fs-13 c-gray"
+                        >Enable/Disable The Feature</span
+                      >
+                    </div>
+
+                    <label>
+                      <input type="checkbox" class="toggle-check" />
+                      <div class="toggle-switch"></div>
+                    </label>
+                  </li>
+                  <li class="flx-ac gap-10">
+                    <div class="info flx-1">
+                      <span class="title block fw-500 mb-10">Devices</span>
+                      <span class="block fw-500 fs-13 c-gray"
+                        >Check The Login Devices List</span
+                      >
+                    </div>
+                    <a href="#" class="bg-eee btn-shape">Change</a>
+                  </li>
+                </ul>
+              </section>
+
+              <section class="social-info">
+                <h2>Social Info</h2>
+                <p>Social Media Information</p>
+
+                <ul>
+                  <li class="d-flx border-ddd rad-6 o-hidden">
+                    <i class="fa-brands fa-twitter c-gray flex-center"></i>
+                    <input
+                      type="text"
+                      placeholder="Twitter Username"
+                      class="p-10 flx-1 border-none"
+                    />
+                  </li>
+                  <li class="d-flx border-ddd rad-6 o-hidden">
+                    <i class="fa-brands fa-facebook-f c-gray flex-center"></i>
+                    <input
+                      type="text"
+                      placeholder="Facebook Username"
+                      class="p-10 flx-1 border-none"
+                    />
+                  </li>
+                  <li class="d-flx border-ddd rad-6 o-hidden">
+                    <i class="fa-brands fa-youtube c-gray flex-center"></i>
+                    <input
+                      type="text"
+                      placeholder="Youtube Username"
+                      class="p-10 flx-1 border-none"
+                    />
+                  </li>
+                  <li class="d-flx border-ddd rad-6 o-hidden">
+                    <i class="fa-brands fa-linkedin c-gray flex-center"></i>
+                    <input
+                      type="text"
+                      placeholder="LinkedIn Username"
+                      class="p-10 flx-1 border-none"
+                    />
+                  </li>
+                </ul>
+              </section>
+
+              <section class="widgets-control">
+                <h2>Widgets Control</h2>
+                <p>Show/Hide Widgets</p>
+                <ul>
+                  <li>
+                    <input type="checkbox" name="widgets" id="draft" checked />
+                    <label for="draft">Quick Draft</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      name="widgets"
+                      id="targets"
+                      checked
+                    />
+                    <label for="targets">Yearly Targets</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      name="widgets"
+                      id="tickets"
+                      checked
+                    />
+                    <label for="tickets">Tickets Statistics</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="widgets" id="news" checked />
+                    <label for="news">Latest News</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="widgets" id="tasks" />
+                    <label for="tasks">Latest Tasks</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="widgets" id="search" checked />
+                    <label for="search">Top Search Items</label>
+                  </li>
+                </ul>
+              </section>
+
+              <section class="backup-manager">
+                <h2>Backup Manager</h2>
+                <p>Control Backup Time And Location</p>
+
+                <ul>
+                  <li>
+                    <input type="radio" name="backup" id="one" checked />
+                    <label for="one">Daily</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="backup" id="two" />
+                    <label for="two">Weekly</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="backup" id="three" />
+                    <label for="three">Monthly</label>
+                  </li>
+                </ul>
+
+                <div
+                  class="server-selection pt-20 mt-20 border-t-eee d-flx gap-10 flx-w flx-mobile"
+                >
+                  <div class="wrapper flx-1">
+                    <input
+                      type="radio"
+                      class="aprnc-none"
+                      name="server"
+                      id="r-1"
+                    />
+                    <label
+                      for="r-1"
+                      class="block border-eee p-20 rad-6 w-full txt-c cur-p"
+                    >
+                      <div class="info">
+                        <i class="fa-solid fa-server"></i>
+                        <span class="block mt-10 fw-500">Megaman</span>
+                      </div>
+                    </label>
+                  </div>
+
+                  <div class="wrapper flx-1">
+                    <input
+                      type="radio"
+                      class="aprnc-none"
+                      name="server"
+                      id="r-2"
+                      checked
+                    />
+                    <label
+                      for="r-2"
+                      class="block border-eee p-20 rad-6 w-full txt-c cur-p"
+                    >
+                      <div class="info">
+                        <i class="fa-solid fa-server"></i>
+                        <span class="block mt-10 fw-500">Locally</span>
+                      </div>
+                    </label>
+                  </div>
+
+                  <div class="wrapper flx-1">
+                    <input
+                      type="radio"
+                      class="aprnc-none"
+                      name="server"
+                      id="r-3"
+                    />
+                    <label
+                      class="block border-eee p-20 rad-6 w-full txt-c cur-p"
+                      for="r-3"
+                    >
+                      <div class="info">
+                        <i class="fa-solid fa-server"></i>
+                        <span class="block mt-10 fw-500">Sigma</span>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

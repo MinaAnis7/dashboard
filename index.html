@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <title>UrDash</title>
+  </head>
+  <body>
+    <div class="page">
+      <div class="sidebar bg-white shad-1 p-20">
+        <div class="logo">
+          <a href="#">UrDash</a>
+          <a href="#" class="mobile-logo">UD</a>
+        </div>
+        <ul class="links">
+          <li>
+            <a href="#" class="active">
+              <i class="fa-solid fa-chart-line"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="settings.html">
+              <i class="fa-solid fa-sliders"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="profile.html ">
+              <i class="fa-regular fa-user"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="projects.html">
+              <i class="fa-solid fa-diagram-project"></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="courses.html">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span>Courses</span>
+            </a>
+          </li>
+          <li>
+            <a href="friends.html">
+              <i class="fa-solid fa-users"></i>
+              <span>Friends</span>
+            </a>
+          </li>
+          <li>
+            <a href="files.html">
+              <i class="fa-regular fa-file"></i>
+              <span>Files</span>
+            </a>
+          </li>
+          <li>
+            <a href="plans.html">
+              <i class="fa-regular fa-credit-card"></i>
+              <span>Plans</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-content">
+        <header class="bg-w">
+          <div class="search rad-10">
+            <input
+              type="search"
+              class="border-ccc rad-10"
+              placeholder="Type A Keyword"
+            />
+          </div>
+          <div class="noti-prof">
+            <div class="icon rel">
+              <i class="fa-regular fa-bell"></i>
+            </div>
+            <img src="images/avatar.png" alt="Profile Image" />
+          </div>
+        </header>
+
+        <div class="content p-20">
+          <h1 class="mb-40 rel">Dashboard</h1>
+          <div class="cards">
+            <div class="welcome-card">
+              <div class="welcoming bg-eee p-20 rel">
+                <div class="content">
+                  <h2 class="card-heading">Welcome</h2>
+                  <span>Mina</span>
+                  <div class="image">
+                    <img src="images/avatar.png" class="shad-1" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="info p-20 mb-20">
+                <div>
+                  <span>Mina Anis</span>
+                  <span>Developer</span>
+                </div>
+                <div>
+                  <span>80</span>
+                  <span>Projects</span>
+                </div>
+                <div>
+                  <span>$8500</span>
+                  <span>Earned</span>
+                </div>
+              </div>
+              <a
+                href="profile.html"
+                class="profile-link m-20 blue-button link-right"
+                >Profile</a
+              >
+            </div>
+
+            <div class="draft-card p-20">
+              <h2 class="card-heading">Quick Draft</h2>
+              <p>Write A Draft For Your Ideas</p>
+              <form action="#">
+                <input type="text" placeholder="Title" />
+                <textarea placeholder="Your Thoughts"></textarea>
+                <input
+                  type="submit"
+                  value="Save"
+                  class="blue-button link-right"
+                />
+              </form>
+            </div>
+
+            <div class="yearly-targets p-20">
+              <h2 class="card-heading">Yearly Targets</h2>
+              <p class="p-after-h">Targets Of The Year</p>
+              <div class="content">
+                <div class="box">
+                  <i class="fa-solid fa-dollar-sign flex-center"></i>
+                  <div class="info">
+                    <span class="title">Money</span>
+                    <span class="value">$20,000</span>
+                    <div class="progress">
+                      <span style="width: 80%" data-progress="80%"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <i class="fa-solid fa-code flex-center"></i>
+                  <div class="info">
+                    <span class="title">Projects</span>
+                    <span class="value">24</span>
+                    <div class="progress">
+                      <span style="width: 55%" data-progress="55%"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <i class="fa-solid fa-users flex-center"></i>
+                  <div class="info">
+                    <span class="title">Team</span>
+                    <span class="value">12</span>
+                    <div class="progress" data-progress="75%">
+                      <span style="width: 75%" data-progress="75%"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tickets-card p-20">
+              <h2 class="card-heading">Tickets Statistics</h2>
+              <p class="p-after-h">Everything About Support Tickets</p>
+              <div class="info">
+                <div class="box border-ccc p-20 rad-6">
+                  <i class="fa-regular fa-rectangle-list"></i>
+                  <span class="value">2500</span>
+                  <span class="status">Total</span>
+                </div>
+                <div class="box border-ccc p-20 rad-6">
+                  <i class="fa-solid fa-spinner"></i>
+                  <span class="value">500</span>
+                  <span class="status">Pending</span>
+                </div>
+                <div class="box border-ccc p-20 rad-6">
+                  <i class="fa-regular fa-circle-check"></i>
+                  <span class="value">1900</span>
+                  <span class="status">Closed</span>
+                </div>
+                <div class="box border-ccc p-20 rad-6">
+                  <i class="fa-regular fa-rectangle-xmark"></i>
+                  <span class="value">100</span>
+                  <span class="status">Deleted</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="latest-news p-20">
+              <h2 class="card-heading">Latest News</h2>
+              <ul class="news">
+                <li>
+                  <div class="img-info">
+                    <img src="images/news-01.png" />
+                    <div class="info">
+                      <h3>Created SASS Section</h3>
+                      <p>New SASS Examples & Tutorials</p>
+                    </div>
+                  </div>
+                  <span class="time">3 Days Ago</span>
+                </li>
+                <li>
+                  <div class="img-info">
+                    <img src="images/news-02.png" />
+                    <div class="info">
+                      <h3>Changed The Design</h3>
+                      <p>A Brand New Website Design</p>
+                    </div>
+                  </div>
+                  <div class="time">5 Days Ago</div>
+                </li>
+                <li>
+                  <div class="img-info">
+                    <img src="images/news-03.png" />
+                    <div class="info">
+                      <h3>Team Increased</h3>
+                      <p>3 Developers Joined The Team</p>
+                    </div>
+                  </div>
+                  <div class="time">7 Days Ago</div>
+                </li>
+                <li>
+                  <div class="img-info">
+                    <img src="images/news-04.png" />
+                    <div class="info">
+                      <h3>Added Payment Gateway</h3>
+                      <p>Many New Payment Gateways Added</p>
+                    </div>
+                  </div>
+                  <div class="time">9 Days Ago</div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="latest-tasks p-20">
+              <h2 class="card-heading">Latest Tasks</h2>
+
+              <ul class="tasks">
+                <li>
+                  <div class="info">
+                    <h3>Record One New Video</h3>
+                    <p>Record Python Create Exe Project</p>
+                  </div>
+                  <i class="fa-regular fa-trash-can"></i>
+                </li>
+                <li>
+                  <div class="info">
+                    <h3>Write Article</h3>
+                    <p>Write Low Level vs High Level Languages</p>
+                  </div>
+                  <i class="fa-regular fa-trash-can"></i>
+                </li>
+                <li>
+                  <div class="info">
+                    <h3>Finish Project</h3>
+                    <p>Publish Academy Programming Project</p>
+                  </div>
+                  <i class="fa-regular fa-trash-can"></i>
+                </li>
+                <li>
+                  <div class="info">
+                    <h3>Attend The Meeting</h3>
+                    <p>Attend The Project Business Analysis Meeting</p>
+                  </div>
+                  <i class="fa-regular fa-trash-can"></i>
+                </li>
+                <li>
+                  <div class="info">
+                    <h3>Finish Lesson</h3>
+                    <p>Finish Teaching Flex Box</p>
+                  </div>
+                  <i class="fa-regular fa-trash-can"></i>
+                </li>
+              </ul>
+            </div>
+
+            <div class="top-searchs p-20">
+              <h2 class="card-heading">Top Search Items</h2>
+              <ul>
+                <li class="heading">
+                  <span>Keyword</span>
+                  <span>Search Count</span>
+                </li>
+                <li>
+                  <span class="keyword">Programming</span>
+                  <span class="count">220</span>
+                </li>
+                <li>
+                  <span class="keyword">JavaScript</span>
+                  <span class="count">180</span>
+                </li>
+                <li>
+                  <span class="keyword">PHP</span>
+                  <span class="count">160</span>
+                </li>
+                <li>
+                  <span class="keyword">Code</span>
+                  <span class="count">145</span>
+                </li>
+                <li>
+                  <span class="keyword">Design</span>
+                  <span class="count">110</span>
+                </li>
+                <li>
+                  <span class="keyword">Logic</span>
+                  <span class="count">95</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="latest-uploads p-20">
+              <h2 class="card-heading">Latest Uploads</h2>
+
+              <ul class="uploads">
+                <li>
+                  <div class="file-info">
+                    <img src="images/pdf.svg" alt="file Image" />
+                    <div class="info">
+                      <span class="file-name">my-file.pdf</span>
+                      <span class="user">Mina</span>
+                    </div>
+                  </div>
+                  <span class="file-size">2.9mb</span>
+                </li>
+                <li>
+                  <div class="file-info">
+                    <img src="images/avi.svg" alt="file Image" />
+                    <div class="info">
+                      <span class="file-name">My-Video-File.avi</span>
+                      <span class="user">Admin</span>
+                    </div>
+                  </div>
+                  <span class="file-size">4.9mb</span>
+                </li>
+                <li>
+                  <div class="file-info">
+                    <img src="images/psd.svg" alt="file Image" />
+                    <div class="info">
+                      <span class="file-name">My-Psd-File.pdf</span>
+                      <span class="user">Osama</span>
+                    </div>
+                  </div>
+                  <span class="file-size">4.5mb</span>
+                </li>
+                <li>
+                  <div class="file-info">
+                    <img src="images/zip.svg" alt="file Image" />
+                    <div class="info">
+                      <span class="file-name">My-Zip-File.pdf</span>
+                      <span class="user">User</span>
+                    </div>
+                  </div>
+                  <span class="file-size">8.9mb</span>
+                </li>
+                <li>
+                  <div class="file-info">
+                    <img src="images/dll.svg" alt="file Image" />
+                    <div class="info">
+                      <span class="file-name">My-DLL-File.pdf</span>
+                      <span class="user">Admin</span>
+                    </div>
+                  </div>
+                  <span class="file-size">4.9mb</span>
+                </li>
+                <li>
+                  <div class="file-info">
+                    <img src="images/eps.svg" alt="file Image" />
+                    <div class="info">
+                      <span class="file-name">My-Eps-File.pdf</span>
+                      <span class="user">Designer</span>
+                    </div>
+                  </div>
+                  <span class="file-size">8.9mb</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="project-progress">
+              <div class="container p-20">
+                <h2 class="card-heading">Last Project Progress</h2>
+                <ul class="rel">
+                  <li class="done">Got the project</li>
+                  <li class="done">Started The Project</li>
+                  <li class="done">The Project Is About To Finish</li>
+                  <li class="in-progress">Test The Project</li>
+                  <li>Finish The Project & Get Money</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="reminders p-20">
+              <h2 class="card-heading">Reminders</h2>
+              <ul>
+                <li class="blue">
+                  <div class="info">
+                    <span class="title">Check My Tasks List</span>
+                    <span class="date-time">28/09/2022 - 12:00am</span>
+                  </div>
+                </li>
+                <li class="green">
+                  <div class="info">
+                    <span class="title">Check My Projects</span>
+                    <span class="date-time">26/10/2022 - 12:00am</span>
+                  </div>
+                </li>
+                <li class="orange">
+                  <div class="info">
+                    <span class="title">Call All My Clients</span>
+                    <span class="date-time">05/11/2022 - 12:00am</span>
+                  </div>
+                </li>
+                <li class="red">
+                  <div class="info">
+                    <span class="title">Finish The Development Workshop</span>
+                    <span class="date-time">20/12/2022 - 12:00am</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="latest-post p-20">
+              <h2 class="card-heading">Latest Post</h2>
+              <div class="user">
+                <img class="block" src="images/avatar.png" />
+                <div class="info">
+                  <h3>Mina Anis</h3>
+                  <span class="time">About 3 Hours Ago</span>
+                </div>
+              </div>
+              <p class="post-content">
+                You can fool all of the people some of the time, and some of the
+                people all of the time, but you can't fool all of the people all
+                of the time.
+              </p>
+              <div class="reactions">
+                <div class="likes">
+                  <i class="fa-regular fa-heart"></i>
+                  <span class="count">1.8k</span>
+                </div>
+                <div class="comments">
+                  <i class="fa-regular fa-comments"></i>
+                  <span class="count">500</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-stats p-20">
+              <h2 class="card-heading">Social Media Statistics</h2>
+              <ul>
+                <li>
+                  <i class="fa-brands fa-twitter flex-center"></i>
+                  <div class="stats">
+                    <span class="count">90k Followers</span>
+                    <a href="#">Follow</a>
+                  </div>
+                </li>
+                <li>
+                  <i class="fa-brands fa-facebook-f flex-center"></i>
+                  <div class="stats">
+                    <span class="count">2M Like</span>
+                    <a href="#">Like</a>
+                  </div>
+                </li>
+                <li>
+                  <i class="fa-brands fa-youtube flex-center"></i>
+                  <div class="stats">
+                    <span class="count">1M Subs</span>
+                    <a href="#">Subscribe</a>
+                  </div>
+                </li>
+                <li>
+                  <i class="fa-brands fa-linkedin flex-center"></i>
+                  <div class="stats">
+                    <span class="count">70k Follower</span>
+                    <a href="#">Follow</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="projects p-20">
+              <h2 class="card-heading">Projects</h2>
+              <div class="projects-data">
+                <table>
+                  <tr>
+                    <th>Name</th>
+                    <th>Finish Date</th>
+                    <th>Client</th>
+                    <th>Price</th>
+                    <th>Team</th>
+                    <th>Status</th>
+                  </tr>
+                  <tr>
+                    <td>Ministry Wikipedia</td>
+                    <td>10 May 2022</td>
+                    <td>Ministry</td>
+                    <td>$5300</td>
+                    <td>
+                      <div class="images">
+                        <img src="images/team-01.png" alt="Member Image" />
+                        <img src="images/team-02.png" alt="Member Image" />
+                        <img src="images/team-03.png" alt="Member Image" />
+                        <img src="images/team-05.png" alt="Member Image" />
+                      </div>
+                    </td>
+                    <td>
+                      <span class="pending"> Pending </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mon Shop</td>
+                    <td>12 Oct 2021</td>
+                    <td>Mon Companey</td>
+                    <td>$1500</td>
+                    <td>
+                      <div class="images">
+                        <img src="images/team-01.png" alt="Member Image" />
+                        <img src="images/team-02.png" alt="Member Image" />
+                        <img src="images/team-04.png" alt="Member Image" />
+                      </div>
+                    </td>
+                    <td>
+                      <span class="in-progress"> In Progress </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Bouba App</td>
+                    <td>05 Sep 2021</td>
+                    <td>Bouba</td>
+                    <td>$800</td>
+                    <td>
+                      <div class="images">
+                        <img src="images/team-01.png" alt="Member Image" />
+                        <img src="images/team-02.png" alt="Member Image" />
+                      </div>
+                    </td>
+                    <td><span class="completed"> Completed </span></td>
+                  </tr>
+                  <tr>
+                    <td>Mahmoud Website</td>
+                    <td>22 May 2021</td>
+                    <td>Mahmoud</td>
+                    <td>$600</td>
+                    <td>
+                      <div class="images">
+                        <img src="images/team-01.png" alt="Member Image" />
+                        <img src="images/team-05.png" alt="Member Image" />
+                      </div>
+                    </td>
+                    <td><span class="completed"> Completed </span></td>
+                  </tr>
+                  <tr>
+                    <td>Sayed Website</td>
+                    <td>24 May 2021</td>
+                    <td>Sayed</td>
+                    <td>$300</td>
+                    <td>
+                      <div class="images">
+                        <img src="images/team-01.png" alt="Member Image" />
+                        <img src="images/team-04.png" alt="Member Image" />
+                      </div>
+                    </td>
+                    <td><span class="rejected"> Rejected </span></td>
+                  </tr>
+                  <tr>
+                    <td>Arena Application</td>
+                    <td>01 Mar 2021</td>
+                    <td>Arena Company</td>
+                    <td>$2600</td>
+                    <td>
+                      <div class="images">
+                        <img src="images/team-01.png" alt="Member Image" />
+                        <img src="images/team-02.png" alt="Member Image" />
+                        <img src="images/team-05.png" alt="Member Image" />
+                        <img src="images/team-04.png" alt="Member Image" />
+                      </div>
+                    </td>
+                    <td><span class="completed"> Completed </span></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
