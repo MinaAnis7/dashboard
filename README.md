@@ -5,3 +5,9 @@
 
 ## Live Demo
 Please, visit **UrDash** Through the following link: [live Demo](https://minaanis7.github.io/dashboard/)
+
+## Languages and Libraries Used
+- HTML
+- CSS
+- Font Awesome Free v6.6.0
+- Normailze.css v8.0.1
